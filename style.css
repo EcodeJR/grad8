@@ -85,39 +85,12 @@ nav h1 {
 }
 
 .page {
-    height: auto;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-}
-
-@media only screen and (max-width:768px) {
-    .home {
-        margin-bottom: 10px;
-    }
-    .page {
-        height: auto;
-        flex-direction: column;
-    }
-    .list {
-        width: 70vw;
-    }
-    .page .text {
-        height: auto;
-        width: 100%;
-    }
-    .page .gif {
-        height: 50vh;
-        width: 100%;
-    }
-    .text h1 {
-        font-size: 40px;
-    }
-    .grid {
-        place-items: center;
-    }
 }
 
 .page .text {
@@ -154,6 +127,33 @@ nav h1 {
 .page .gif {
     width: 50%;
     height: 100%;
+}
+
+@media only screen and (max-width:768px) {
+    .home {
+        margin-bottom: 10px;
+    }
+    .page {
+        height: auto;
+        flex-direction: column;
+    }
+    .list {
+        width: 70vw;
+    }
+    .page .text {
+        height: auto;
+        width: 100%;
+    }
+    .page .gif {
+        height: 50vh;
+        width: 100%;
+    }
+    .text h1 {
+        font-size: 40px;
+    }
+    .grid {
+        place-items: center;
+    }
 }
 
 .gif img {
